@@ -1,0 +1,206 @@
+.header {
+  /* padding: 2rem 10%; */
+  margin: 2rem 10%;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ece1fa;
+  text-decoration: none;
+  font-family: "Lato", serif;
+}
+
+.header li {
+  text-decoration: none;
+  display: inline;
+  float: left;
+  height: auto;
+
+}
+.header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.header img {
+  position: absolute;
+  left: 79%;
+  padding: 0;
+  margin: auto;
+  top: 7%;
+}
+
+
+
+.header li :hover {
+  background-color: #858585;
+  color:white
+}
+
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #a990fb;
+  color: #2a2630;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #858585;
+}
+
+.navbar.active a {
+background-color: #858585;
+color: #858585;
+}
+
+.active { 
+  background-color: #858585;
+  color: #858585;
+  border-radius: 8%;
+}
+
+.navbarAct{
+  color:#858585;
+}
+.hamburger {
+  display: none; /* Hide hamburger menu by default */
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+/* Show menu in mobile view */
+.menu.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 20px;
+  background-color:transparent; /* Adjust as needed */
+}
+
+/* Styles for the hamburger lines */
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #000; /* Adjust as needed */
+  margin: 5px;
+}
+
+/* Show hamburger menu in mobile view */
+.header.open .hamburger {
+  display: block;
+}
+
+/* Media query for phone screens */
+@media only screen and (max-width: 480px) {
+  .hamburger {
+    display: block; /* Show hamburger menu icon on phones */
+  }
+
+  .menu {
+    display: none; /* Hide menu by default on phones */
+    width: 100%;
+    height: auto;
+    animation: fadeInMenu 1s forwards;
+  }
+  @keyframes fadeInMenu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .menu.show {
+    display: flex;
+    position:relative;
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+    animation: easeInMenu 1s forwards;
+}
+@keyframes easeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.navbar {
+  width: 100%;
+}
+
+.navbar li {
+  width: 100%;
+}
+
+.header {
+  width: 87%
+}
+
+  .header img {
+    position: absolute;
+    left: 40%;
+    padding: 0;
+    margin: auto;
+    top: 4%;
+  }
+}
+
+
+/* Media query for iPad screens */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    width: 80%; /* Adjust as needed */
+  }
+
+  .header img {
+    width: 20%; /* Ensure the image takes up the full width of the header */
+    max-width: none; /* Remove any maximum width restriction */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image behaves as a block element */
+    top: 5%; /* Adjust the top position */
+  }
+
+  .menu {
+    display: flex; /* Ensure menu is displayed */
+    flex-direction: row; /* Adjust menu direction */
+    justify-content: center; /* Center menu items */
+    width: 100%; /* Ensure full width */
+  }
+
+  .menu.show {
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center; /* Center items vertically */
+    padding: 0; /* Remove any padding */
+  }
+
+  .navbar,
+  .navbar li {
+    width: auto; /* Allow menu items to adjust width */
+  }
+}

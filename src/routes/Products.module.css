@@ -1,0 +1,40 @@
+.products {
+  list-style: none;
+  max-width: 50rem;
+  margin: 5rem auto;
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+  text-decoration: none;
+}
+.image{
+  max-width: 20rem;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.work p {
+  text-align: center;
+  animation-delay: 3s;
+  animation: animate-in 2s ease-out forwards;
+}
+.work p a{ 
+  font-family: "Lato", serif;
+  font-weight: 800;
+  text-decoration: none;
+  color:white;
+}
+
+
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

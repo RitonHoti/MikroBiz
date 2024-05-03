@@ -1,0 +1,56 @@
+.backdrop {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+.mapImg {
+  width: 100%;
+  height: auto;
+  opacity: 60%;
+}
+  
+  .modal {
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    overflow: hidden;
+    z-index: 1;
+    width: 60%;
+    height: 70%;
+    background-image: url('../assets/map.png');
+
+}
+
+/* Media Queries for Tablet and Mobile Devices */
+@media screen and (max-width: 1024px) {
+  .modal {
+    width: 80%; /* Adjusted width for tablets */
+    height: 70%; /* Adjusted height for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 90%; /* Adjusted width for smaller tablets and large mobile devices */
+    height: 80%; /* Adjusted height for smaller tablets and large mobile devices */
+    margin-top: 50px; /* Adjusted margin-top for smaller devices */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 95%; /* Adjusted width for small mobile devices */
+    height: 80%; /* Adjusted height for small mobile devices */
+    margin-top: 60px; /* Adjusted margin-top for small mobile devices */
+  }
+}
+
+
+
+

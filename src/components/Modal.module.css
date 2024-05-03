@@ -1,0 +1,57 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    background-color: rgba(11, 13, 22, 0.6);
+    z-index: 1;
+  }
+  
+  .modal {
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1;
+    width: 80%;
+    height: auto;
+    grid-template-columns: repeat(3, 30%);
+    background-image: url('../assets//header.jpg');
+    animation: animate-in 0.3s ease-out forwards;
+    margin-top: 150px;
+  }
+
+@keyframes animate-in {
+    from {
+      opacity: 0;
+      transform: translateY(7rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Media Queries for Tablet and Mobile Devices */
+@media screen and (max-width: 1024px) {
+  .modal {
+    width: 80%; /* Adjusted width for tablets */
+    height: 100%; /* Adjusted height for tablets */
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 90%; /* Adjusted width for smaller tablets and large mobile devices */
+    height: 80%; /* Adjusted height for smaller tablets and large mobile devices */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 95%; /* Adjusted width for small mobile devices */
+    height: auto; /* Adjusted height for small mobile devices */
+  }
+}

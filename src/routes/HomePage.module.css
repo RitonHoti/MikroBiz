@@ -1,0 +1,116 @@
+.welcomeheader {
+  height: 70vh; /* Changed from 70vb to 70vh for viewport height */
+  background: inherit;
+}
+
+.welcomeheadercontent {
+  width: 80%;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  /* Removed text-justify property as it's not supported */
+  margin: auto;
+  padding-top: 60px;
+}
+
+.welcomeheadercontent h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin: auto;
+}
+
+.welcomeheadercontent p {
+  margin: 2rem 0; /* Adjust margin for smaller screens */
+  font-size: larger;
+  color: #ffffff;
+  font-family: "Lato", serif;
+}
+
+.colab {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.counter {
+  border-radius: 10%;
+  padding: 10px 15px;
+  text-align: center;
+  color: inherit;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  /* Adjustments for medium-sized screens like iPads */
+  .welcomeheadercontent {
+    width: 90%;
+    height: auto;
+  }
+  .welcomeheader{
+    width: 100%;
+    height: auto;
+  }
+  
+  .welcomeheadercontent h1 {
+    font-size: 2.5rem;
+  }
+  .counter {
+    border-radius: 10%;
+    padding: 10px 15px;
+    text-align: center;
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller laptops and tablets */
+  .welcomeheadercontent {
+    width: 95%;
+    height: auto;
+  }
+  .welcomeheader{
+    width: 100%;
+    height: auto;
+  }
+  
+  .welcomeheadercontent h1 {
+    font-size: 2.25rem;
+  }
+  .counter {
+    border-radius: 10%;
+    padding: 10px 15px;
+    text-align: center;
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjustments for mobile devices */
+  .welcomeheadercontent {
+    width: 100%;
+    height: auto;
+  }
+  .welcomeheader{
+    width: 100%;
+    height: auto;
+  }
+  
+  .welcomeheadercontent h1 {
+    font-size: 2rem;
+  }
+  
+  .welcomeheadercontent p {
+    margin: 1rem 1;
+    font-size: 1rem; /* Changed from medium to specific size */
+  }
+  .colab{
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+  }
+  .counter {
+    border-radius: 10%;
+    padding: 10px 15px;
+    text-align: center;
+    color: inherit;
+  }
+}

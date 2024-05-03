@@ -1,0 +1,194 @@
+.list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+  animation: rotate 3s linear forwards;
+}
+
+.list img {
+  width: 100px; /* Set the width of the circular image */
+  height: 100px; /* Set the height of the circular image */
+  border-radius: 50%; /* Make it a circle */
+}
+
+.list h2 {
+  font-size: 16px; /* Adjust the font size of the title */
+  font-size: large;
+  color: white;
+  font-weight: 800;
+  width: 60%;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.list p {
+  margin-top: 50px;
+  font-size: 16px; /* Adjust the font size of the title */
+  font-size: large;
+  color: white;
+  margin-left: 25px;
+}
+
+.list h3 {
+  margin-top: 50px;
+  font-size: 16px; /* Adjust the font size of the title */
+  font-size: large;
+  color: white;
+  font-weight: 800;
+  width: 60%;
+  margin-left: 25px;
+}
+
+.title {
+  display: grid;
+  font-size: larger;
+  color: white;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+
+.titleContact{
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  animation: animate-in 1s ease-out forwards;
+}
+
+.containerContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100%; /* Ensure the container takes full height of the modal */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center inputs horizontally */
+  width: 500px;
+
+}
+
+/* Add margin to each input to separate them */
+.form input,
+.form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+/* Center the button */
+.button {
+  margin-top: 10px; /* Add some space above the button */
+  align-self: center;
+  background-color: #0489aa; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5%;
+}
+
+.button:hover{
+  scale: 1.1;
+}
+
+.closeButton {
+  float: right;
+  position: relative;
+  display: inline;
+  margin-top: 10px; 
+  background-color: #b93e3e;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5%;
+  margin-left: 10px;
+}
+
+.closeButton:hover {
+  scale: 1.1;
+}
+
+/* Responsive styles using media queries */
+@media only screen and (max-width: 1024px) {
+  .list {
+    margin: 3%; /* Adjust margin for tablets */
+  }
+  .form input,
+.form textarea {
+  margin-bottom: 10px;
+  width: 50%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  .list {
+    margin: 2%; /* Adjust margin for smaller tablets */
+  }
+
+  .list img {
+    width: 80px; /* Adjust image size for smaller screens */
+    height: 80px; /* Adjust image size for smaller screens */
+  }
+
+  .list h2,
+  .list h3,
+  .list p {
+    font-size: 14px; /* Further reduce font size for smaller screens */
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .list {
+    margin: 1%; /* Adjust margin for mobile devices */
+  }
+
+  .list img {
+    width: 60px; /* Adjust image size for smaller screens */
+    height: 60px; /* Adjust image size for smaller screens */
+  }
+
+  .list h2,
+  .list h3,
+  .list p {
+    font-size: 12px; /* Further reduce font size for smaller screens */
+    margin-left: 5px; /* Adjust margin for smaller screens */
+    margin-top: 5px; /* Adjust margin for smaller screens */
+  }
+}

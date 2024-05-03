@@ -1,0 +1,120 @@
+.styledlist {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px; /* Adjust margin as needed */
+  animation: animate-in 1s ease-out forwards;
+}
+.styledlista{
+  height: 56vh;
+  margin-top: 100px;
+}
+
+.styledlist li {
+  width: calc(25% - 50px); /* Adjust width and margin for responsiveness */
+  margin: 20px;
+  text-align: center; /* Align text center */
+  float: left;
+}
+
+.styledlist li img {
+  width: 50%;
+  align-items: center;
+  margin-left: 0%;
+  margin-top: 10px;
+  height: 50%;
+}
+
+.itemcontent {
+  text-align: center;
+}
+
+.itemcontent h3 {
+  margin-top: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.itemcontent p {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.button:hover {
+  color: white;
+}
+
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  margin: 0;
+  font-family: "Lato", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#293941, #586f96);
+  color: #d9e2f1;
+  min-height: auto;
+  height: auto;
+}
+
+.work p {
+  text-align: center;
+  animation-delay: 3s;
+  animation: animate-in 2s ease-out forwards;
+}
+.work p a{ 
+  font-family: "Lato", serif;
+  font-weight: 800;
+  text-decoration: none;
+  color:white;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .styledlist li {
+    width: calc(50% - 10px); /* Two columns for screens smaller than 1200px */
+  }
+  .styledlista{
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+  }
+  .work p {
+    text-align: center;
+    animation-delay: 3s;
+    animation: animate-in 2s ease-out forwards;
+  }
+  .work p a{ 
+    font-family: "Lato", serif;
+    font-weight: 800;
+    text-decoration: none;
+    color:white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .styledlist li {
+    width: calc(100% - 40px); /* Single column for screens smaller than 768px */
+  }
+  .styledlista{
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+  }
+  .work  {
+    margin-top: 80px ;
+    text-align: center;
+  }
+}

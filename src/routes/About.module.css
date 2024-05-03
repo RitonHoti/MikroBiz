@@ -1,0 +1,66 @@
+.list {
+  padding: 0;
+  display: block;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: center;
+}
+
+.listFirstItem {
+  padding: 0;
+  display: inline;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: center;
+}
+
+
+.list img {
+  width: 100px; /* Set the width of the circular image */
+  height: 100px; /* Set the height of the circular image */
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 10px; /* Adjust the spacing between the image and title */
+}
+
+.list h2{
+  margin-top: 10px;
+  font-size: 16px; /* Adjust the font size of the title */
+  font-size: large;
+  color: white;
+  font-weight: 800;
+}
+
+.list p {
+  margin: auto;
+  font-size: 16px; /* Adjust the font size of the title */
+  font-size: large;
+  color:#ffffff;
+}
+
+
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.titleAbout {
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+  margin: auto;
+  transition: background-color 0.3s;
+  animation: animate-in 1s ease-out forwards;
+  color: white;
+
+}
+
+.button:hover {
+  color: white;
+}
+

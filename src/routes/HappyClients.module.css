@@ -1,0 +1,109 @@
+.Happycontent{
+    height: 120vh;
+    justify-content: center;
+}
+
+.firstClient { 
+    margin-left: 300px;
+    border-bottom: 1px solid white;
+    width: 30%;
+}
+
+.firstClient img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* -------------------------------------------------*/
+
+
+.secondClient { 
+    float: right;
+    margin-right: 300px;
+    border-bottom: 1px solid white;
+    direction: rtl;
+    width: 30%;
+}
+
+.secondClient img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* -------------------------------------------------*/
+
+
+.thirdClient { 
+    margin-left: 300px;
+    margin-top: 400px;
+    border-bottom: 1px solid white;
+    width: 30%;
+}
+
+.thirdClient img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .Happycontent{
+        height: 170vh;
+        justify-content: center;
+    }
+    .firstClient { 
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .secondClient { 
+        justify-content: center;
+        width: 30%;
+        height: auto;
+        margin: 0;
+        direction: rtl;
+        border-bottom: 1px solid white;
+
+    }
+    .thirdClient { 
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 468px) {
+    .Happycontent{
+        height: 130vh;
+        justify-content: center;
+    }
+    .firstClient { 
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .secondClient { 
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        direction: rtl;
+        border-bottom: 1px solid white;
+    }
+    .thirdClient { 
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-top: 400px;
+
+    }
+}
+
